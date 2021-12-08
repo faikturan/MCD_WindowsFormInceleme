@@ -12,17 +12,12 @@ namespace MCD_WindowsFormInceleme
 {
     public partial class MerhabaForm : Form
     {
-        public MerhabaForm()
-        {
-            InitializeComponent();
-        }
-
         public MerhabaForm(string metin)
         {
+            InitializeComponent();
+            //Eğer bir windows form elemanına dokunmanız gerekli ise buradan veya daha aşağıda bu işlemleri yapabilirsiniz.
             label1.Text = metin;
         }
-
-        public string TxtMesajDegeri { get; }
 
         private void MerhabaForm_Load(object sender, EventArgs e)
         {
