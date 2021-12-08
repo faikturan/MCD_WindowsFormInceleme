@@ -15,6 +15,7 @@ namespace MCD_WindowsFormInceleme
         public Form1()
         {
             InitializeComponent();
+            txtMesaj.Text = "Metin Griniz";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -24,12 +25,22 @@ namespace MCD_WindowsFormInceleme
 
         private void btnAc_Click(object sender, EventArgs e)
         {
+            //Musteri M1 = new Musteri();
 
+            string txtMesajDegeri = txtMesaj.Text;
+
+            MerhabaForm merhabaForm = new MerhabaForm(txtMesajDegeri);
         }
 
         private void txtMesaj_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtMesaj_MouseClick(object sender, MouseEventArgs e)
+        {
+            //txtMesaj.Text = " ";
+            txtMesaj.Clear();
         }
     }
 }

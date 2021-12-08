@@ -35,7 +35,7 @@ namespace MCD_WindowsFormInceleme
             // 
             // btnAc
             // 
-            this.btnAc.Location = new System.Drawing.Point(335, 173);
+            this.btnAc.Location = new System.Drawing.Point(329, 178);
             this.btnAc.Name = "btnAc";
             this.btnAc.Size = new System.Drawing.Size(126, 34);
             this.btnAc.TabIndex = 0;
@@ -49,6 +49,7 @@ namespace MCD_WindowsFormInceleme
             this.txtMesaj.Name = "txtMesaj";
             this.txtMesaj.Size = new System.Drawing.Size(162, 20);
             this.txtMesaj.TabIndex = 1;
+            this.txtMesaj.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtMesaj_MouseClick);
             this.txtMesaj.Enter += new System.EventHandler(this.txtMesaj_Enter);
             // 
             // Form1
